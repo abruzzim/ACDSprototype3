@@ -17,7 +17,6 @@
 		5A1F7AB91ADEE1FF00DE9885 /* TransportsNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F7AB81ADEE1FF00DE9885 /* TransportsNC.m */; };
 		5A1F7ABC1ADEE4D100DE9885 /* TransportsParentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F7ABB1ADEE4D100DE9885 /* TransportsParentVC.m */; };
 		5A1F7ABF1ADEE9D900DE9885 /* GuidelinesNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F7ABE1ADEE9D900DE9885 /* GuidelinesNC.m */; };
-		5A1F7AC21ADEEE1F00DE9885 /* GuidelinesParentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F7AC11ADEEE1F00DE9885 /* GuidelinesParentVC.m */; };
 		5A1F7AC51ADF0CD100DE9885 /* VitalsNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F7AC41ADF0CD100DE9885 /* VitalsNC.m */; };
 		5A1F7AC81ADF0D0000DE9885 /* VitalsParentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F7AC71ADF0D0000DE9885 /* VitalsParentVC.m */; };
 		5A1F7ACB1ADF105B00DE9885 /* FormularyNC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F7ACA1ADF105B00DE9885 /* FormularyNC.m */; };
@@ -29,6 +28,18 @@
 		5A1F7ADD1ADF1A8B00DE9885 /* TransportsMasterTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F7ADC1ADF1A8B00DE9885 /* TransportsMasterTVC.m */; };
 		5A1F7AE01ADF1AD700DE9885 /* TransportDetailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F7ADF1ADF1AD700DE9885 /* TransportDetailTVC.m */; };
 		5A1F7B181ADFF9A100DE9885 /* Details.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A1F7B171ADFF9A100DE9885 /* Details.m */; };
+		AFE9BD0E1AEC1CCC002291DE /* GuidelinesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9BD0D1AEC1CCC002291DE /* GuidelinesTVC.m */; };
+		AFE9BD111AEC1E06002291DE /* Guidelines.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9BD101AEC1E06002291DE /* Guidelines.m */; };
+		AFE9BD141AEC1EAF002291DE /* GuidelineChecklistTask.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9BD131AEC1EAF002291DE /* GuidelineChecklistTask.m */; };
+		AFE9BD161AEC1F80002291DE /* sepsis.html in Resources */ = {isa = PBXBuildFile; fileRef = AFE9BD151AEC1F80002291DE /* sepsis.html */; };
+		AFE9BD181AEC25A8002291DE /* dka.html in Resources */ = {isa = PBXBuildFile; fileRef = AFE9BD171AEC25A8002291DE /* dka.html */; };
+		AFE9BD1A1AEC25C6002291DE /* tbi.html in Resources */ = {isa = PBXBuildFile; fileRef = AFE9BD191AEC25C6002291DE /* tbi.html */; };
+		AFE9BD1C1AEC25D9002291DE /* asthma.html in Resources */ = {isa = PBXBuildFile; fileRef = AFE9BD1B1AEC25D9002291DE /* asthma.html */; };
+		AFE9BD1E1AEC25FE002291DE /* epilepsy.html in Resources */ = {isa = PBXBuildFile; fileRef = AFE9BD1D1AEC25FE002291DE /* epilepsy.html */; };
+		AFE9BD211AEC2FC1002291DE /* GuidelineParentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9BD201AEC2FC1002291DE /* GuidelineParentVC.m */; };
+		AFE9BD241AEC30C9002291DE /* GuidelineFlowchartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9BD231AEC30C9002291DE /* GuidelineFlowchartVC.m */; };
+		AFE9BD271AEC33BB002291DE /* GuidelineOutlineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9BD261AEC33BB002291DE /* GuidelineOutlineVC.m */; };
+		AFE9BD2A1AEC3502002291DE /* GuidelineChecklistTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9BD291AEC3502002291DE /* GuidelineChecklistTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +72,6 @@
 		5A1F7ABB1ADEE4D100DE9885 /* TransportsParentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportsParentVC.m; sourceTree = "<group>"; };
 		5A1F7ABD1ADEE9D900DE9885 /* GuidelinesNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidelinesNC.h; sourceTree = "<group>"; };
 		5A1F7ABE1ADEE9D900DE9885 /* GuidelinesNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelinesNC.m; sourceTree = "<group>"; };
-		5A1F7AC01ADEEE1F00DE9885 /* GuidelinesParentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidelinesParentVC.h; sourceTree = "<group>"; };
-		5A1F7AC11ADEEE1F00DE9885 /* GuidelinesParentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelinesParentVC.m; sourceTree = "<group>"; };
 		5A1F7AC31ADF0CD100DE9885 /* VitalsNC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VitalsNC.h; sourceTree = "<group>"; };
 		5A1F7AC41ADF0CD100DE9885 /* VitalsNC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VitalsNC.m; sourceTree = "<group>"; };
 		5A1F7AC61ADF0D0000DE9885 /* VitalsParentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VitalsParentVC.h; sourceTree = "<group>"; };
@@ -85,6 +94,25 @@
 		5A1F7ADF1ADF1AD700DE9885 /* TransportDetailTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransportDetailTVC.m; sourceTree = "<group>"; };
 		5A1F7B161ADFF9A100DE9885 /* Details.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Details.h; sourceTree = "<group>"; };
 		5A1F7B171ADFF9A100DE9885 /* Details.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Details.m; sourceTree = "<group>"; };
+		AFE9BD0C1AEC1CCC002291DE /* GuidelinesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidelinesTVC.h; sourceTree = "<group>"; };
+		AFE9BD0D1AEC1CCC002291DE /* GuidelinesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelinesTVC.m; sourceTree = "<group>"; };
+		AFE9BD0F1AEC1E06002291DE /* Guidelines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Guidelines.h; sourceTree = "<group>"; };
+		AFE9BD101AEC1E06002291DE /* Guidelines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Guidelines.m; sourceTree = "<group>"; };
+		AFE9BD121AEC1EAF002291DE /* GuidelineChecklistTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidelineChecklistTask.h; sourceTree = "<group>"; };
+		AFE9BD131AEC1EAF002291DE /* GuidelineChecklistTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelineChecklistTask.m; sourceTree = "<group>"; };
+		AFE9BD151AEC1F80002291DE /* sepsis.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sepsis.html; sourceTree = "<group>"; };
+		AFE9BD171AEC25A8002291DE /* dka.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dka.html; sourceTree = "<group>"; };
+		AFE9BD191AEC25C6002291DE /* tbi.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = tbi.html; sourceTree = "<group>"; };
+		AFE9BD1B1AEC25D9002291DE /* asthma.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = asthma.html; sourceTree = "<group>"; };
+		AFE9BD1D1AEC25FE002291DE /* epilepsy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = epilepsy.html; sourceTree = "<group>"; };
+		AFE9BD1F1AEC2FC1002291DE /* GuidelineParentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidelineParentVC.h; sourceTree = "<group>"; };
+		AFE9BD201AEC2FC1002291DE /* GuidelineParentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelineParentVC.m; sourceTree = "<group>"; };
+		AFE9BD221AEC30C9002291DE /* GuidelineFlowchartVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidelineFlowchartVC.h; sourceTree = "<group>"; };
+		AFE9BD231AEC30C9002291DE /* GuidelineFlowchartVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelineFlowchartVC.m; sourceTree = "<group>"; };
+		AFE9BD251AEC33BB002291DE /* GuidelineOutlineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidelineOutlineVC.h; sourceTree = "<group>"; };
+		AFE9BD261AEC33BB002291DE /* GuidelineOutlineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelineOutlineVC.m; sourceTree = "<group>"; };
+		AFE9BD281AEC3502002291DE /* GuidelineChecklistTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidelineChecklistTVC.h; sourceTree = "<group>"; };
+		AFE9BD291AEC3502002291DE /* GuidelineChecklistTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelineChecklistTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,8 +180,25 @@
 				5A1F7B171ADFF9A100DE9885 /* Details.m */,
 				5A1F7AD81ADF198A00DE9885 /* Transport.h */,
 				5A1F7AD91ADF198A00DE9885 /* Transport.m */,
-				5A1F7AC01ADEEE1F00DE9885 /* GuidelinesParentVC.h */,
-				5A1F7AC11ADEEE1F00DE9885 /* GuidelinesParentVC.m */,
+				AFE9BD0F1AEC1E06002291DE /* Guidelines.h */,
+				AFE9BD101AEC1E06002291DE /* Guidelines.m */,
+				AFE9BD121AEC1EAF002291DE /* GuidelineChecklistTask.h */,
+				AFE9BD131AEC1EAF002291DE /* GuidelineChecklistTask.m */,
+				AFE9BD151AEC1F80002291DE /* sepsis.html */,
+				AFE9BD171AEC25A8002291DE /* dka.html */,
+				AFE9BD191AEC25C6002291DE /* tbi.html */,
+				AFE9BD1B1AEC25D9002291DE /* asthma.html */,
+				AFE9BD1D1AEC25FE002291DE /* epilepsy.html */,
+				AFE9BD0C1AEC1CCC002291DE /* GuidelinesTVC.h */,
+				AFE9BD0D1AEC1CCC002291DE /* GuidelinesTVC.m */,
+				AFE9BD1F1AEC2FC1002291DE /* GuidelineParentVC.h */,
+				AFE9BD201AEC2FC1002291DE /* GuidelineParentVC.m */,
+				AFE9BD221AEC30C9002291DE /* GuidelineFlowchartVC.h */,
+				AFE9BD231AEC30C9002291DE /* GuidelineFlowchartVC.m */,
+				AFE9BD251AEC33BB002291DE /* GuidelineOutlineVC.h */,
+				AFE9BD261AEC33BB002291DE /* GuidelineOutlineVC.m */,
+				AFE9BD281AEC3502002291DE /* GuidelineChecklistTVC.h */,
+				AFE9BD291AEC3502002291DE /* GuidelineChecklistTVC.m */,
 				5A1F7AC61ADF0D0000DE9885 /* VitalsParentVC.h */,
 				5A1F7AC71ADF0D0000DE9885 /* VitalsParentVC.m */,
 				5A1F7AD21ADF13FE00DE9885 /* VideoParentVC.h */,
@@ -274,7 +319,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFE9BD1C1AEC25D9002291DE /* asthma.html in Resources */,
 				5A1F7A971ADEDAF800DE9885 /* Main.storyboard in Resources */,
+				AFE9BD161AEC1F80002291DE /* sepsis.html in Resources */,
+				AFE9BD1E1AEC25FE002291DE /* epilepsy.html in Resources */,
+				AFE9BD1A1AEC25C6002291DE /* tbi.html in Resources */,
+				AFE9BD181AEC25A8002291DE /* dka.html in Resources */,
 				5A1F7A9C1ADEDAF800DE9885 /* LaunchScreen.xib in Resources */,
 				5A1F7A991ADEDAF800DE9885 /* Images.xcassets in Resources */,
 			);
@@ -301,16 +351,22 @@
 				5A1F7AC81ADF0D0000DE9885 /* VitalsParentVC.m in Sources */,
 				5A1F7ACB1ADF105B00DE9885 /* FormularyNC.m in Sources */,
 				5A1F7AB31ADEDE3700DE9885 /* MainTBC.m in Sources */,
-				5A1F7AC21ADEEE1F00DE9885 /* GuidelinesParentVC.m in Sources */,
+				AFE9BD2A1AEC3502002291DE /* GuidelineChecklistTVC.m in Sources */,
 				5A1F7ABC1ADEE4D100DE9885 /* TransportsParentVC.m in Sources */,
+				AFE9BD141AEC1EAF002291DE /* GuidelineChecklistTask.m in Sources */,
 				5A1F7ADD1ADF1A8B00DE9885 /* TransportsMasterTVC.m in Sources */,
+				AFE9BD0E1AEC1CCC002291DE /* GuidelinesTVC.m in Sources */,
 				5A1F7ADA1ADF198A00DE9885 /* Transport.m in Sources */,
+				AFE9BD111AEC1E06002291DE /* Guidelines.m in Sources */,
+				AFE9BD271AEC33BB002291DE /* GuidelineOutlineVC.m in Sources */,
 				5A1F7AD71ADF188D00DE9885 /* Transports.m in Sources */,
+				AFE9BD241AEC30C9002291DE /* GuidelineFlowchartVC.m in Sources */,
 				5A1F7AD11ADF13C500DE9885 /* VideoNC.m in Sources */,
 				5A1F7AB91ADEE1FF00DE9885 /* TransportsNC.m in Sources */,
 				5A1F7B181ADFF9A100DE9885 /* Details.m in Sources */,
 				5A1F7AE01ADF1AD700DE9885 /* TransportDetailTVC.m in Sources */,
 				5A1F7A8E1ADEDAF800DE9885 /* main.m in Sources */,
+				AFE9BD211AEC2FC1002291DE /* GuidelineParentVC.m in Sources */,
 				5A1F7ACE1ADF108700DE9885 /* FormularyParentVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
