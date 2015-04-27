@@ -10,4 +10,13 @@
 
 @implementation GuidelineChecklistTask
 
+- (instancetype)initWithTitle:(NSString *)aTitle {
+    NSLog(@"%%GuidelineChecklistTask-I-TRACE, -initWithTitle called.");
+    
+    if (self = [super init]) {
+        self.title = aTitle;
+    }
+    return self;
+}
+
 @end

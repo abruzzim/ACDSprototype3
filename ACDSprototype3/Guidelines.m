@@ -14,66 +14,66 @@
 + (NSArray *)knownGuidelines {
     NSLog(@"%%Guidelines-I-TRACE, +knownGuidelines called.");
     
-    // Treatment guidelines (protocols) dictionary.
-    //
-    NSMutableArray *tasks1 = [[NSMutableArray alloc] init];
-    GuidelineChecklistTask *task1 = [[GuidelineChecklistTask alloc] init];
-    task1.title = @"Assess Patient";
-    [tasks1 addObject:task1];
-    GuidelineChecklistTask *task2 = [[GuidelineChecklistTask alloc] init];
-    task2.title = @"Give Oxygen";
-    [tasks1 addObject:task2];
-    GuidelineChecklistTask *task3 = [[GuidelineChecklistTask alloc] init];
-    task3.title = @"Place 2 IVs / IO";
-    [tasks1 addObject:task3];
-    GuidelineChecklistTask *task4 = [[GuidelineChecklistTask alloc] init];
-    task4.title = @"Draw POC Labs";
-    [tasks1 addObject:task4];
-    GuidelineChecklistTask *task5 = [[GuidelineChecklistTask alloc] init];
-    task5.title = @"Draw Labs";
-    [tasks1 addObject:task5];
-    GuidelineChecklistTask *task6 = [[GuidelineChecklistTask alloc] init];
-    task6.title = @"Give Fluids";
-    [tasks1 addObject:task6];
-    GuidelineChecklistTask *task7 = [[GuidelineChecklistTask alloc] init];
-    task7.title = @"Assess POC Labs";
-    [tasks1 addObject:task7];
-    GuidelineChecklistTask *task8 = [[GuidelineChecklistTask alloc] init];
-    task8.title = @"Treat Hypocalcemia";
-    [tasks1 addObject:task8];
-    GuidelineChecklistTask *task9 = [[GuidelineChecklistTask alloc] init];
-    task9.title = @"Treat Hypoglycemia";
-    [tasks1 addObject:task9];
-    GuidelineChecklistTask *task10 = [[GuidelineChecklistTask alloc] init];
-    task10.title = @"Treat Acidosis";
-    [tasks1 addObject:task10];
-    GuidelineChecklistTask *task11 = [[GuidelineChecklistTask alloc] init];
-    task11.title = @"Order Ceftriaxone";
-    [tasks1 addObject:task11];
-    GuidelineChecklistTask *task12 = [[GuidelineChecklistTask alloc] init];
-    task12.title = @"Order Vancomycin";
-    [tasks1 addObject:task12];
-    GuidelineChecklistTask *task13 = [[GuidelineChecklistTask alloc] init];
-    task13.title = @"Treat Hypotension";
-    [tasks1 addObject:task13];
-    GuidelineChecklistTask *task14 = [[GuidelineChecklistTask alloc] init];
-    task14.title = @"Reassess Patient";
-    [tasks1 addObject:task14];
-    GuidelineChecklistTask *task15 = [[GuidelineChecklistTask alloc] init];
-    task15.title = @"Treat Adrenal Insufficiency";
-    [tasks1 addObject:task15];
-    GuidelineChecklistTask *task16 = [[GuidelineChecklistTask alloc] init];
-    task16.title = @"Treat Hypotension";
-    [tasks1 addObject:task16];
-    GuidelineChecklistTask *task17 = [[GuidelineChecklistTask alloc] init];
-    task17.title = @"Draw Blood Culture";
-    [tasks1 addObject:task17];
-    GuidelineChecklistTask *task18 = [[GuidelineChecklistTask alloc] init];
-    task18.title = @"Give Antibiotics";
-    [tasks1 addObject:task18];
-    GuidelineChecklistTask *task19 = [[GuidelineChecklistTask alloc] init];
-    task19.title = @"Give Fluids";
-    [tasks1 addObject:task19];
+/*
+ *--------------------------------------------------- SEPSIS ------------------------------------------------------|
+ */
+
+    // 0th Interval
+    GuidelineChecklistTask *task1 = [[GuidelineChecklistTask alloc] initWithTitle:@"Assess Patient"];
+    GuidelineChecklistTask *task2 = [[GuidelineChecklistTask alloc] initWithTitle:@"Give Oxygen"];
+    // 1st Interval
+    GuidelineChecklistTask *task3 = [[GuidelineChecklistTask alloc] initWithTitle:@"Place 2 IVs / IO"];
+    GuidelineChecklistTask *task4 = [[GuidelineChecklistTask alloc] initWithTitle:@"Draw POC Labs"];
+    GuidelineChecklistTask *task5 = [[GuidelineChecklistTask alloc] initWithTitle:@"Draw Hospital Labs"];
+    GuidelineChecklistTask *task6 = [[GuidelineChecklistTask alloc] initWithTitle:@"Give Fluids"];
+    GuidelineChecklistTask *task7 = [[GuidelineChecklistTask alloc] initWithTitle:@"Assess POC Results"];
+    GuidelineChecklistTask *task8 = [[GuidelineChecklistTask alloc] initWithTitle:@"Treat Hypocalcemia"];
+    GuidelineChecklistTask *task9 = [[GuidelineChecklistTask alloc] initWithTitle:@"Treat Hypoglycemia"];
+    GuidelineChecklistTask *task10 = [[GuidelineChecklistTask alloc] initWithTitle:@"Treat Acidosis"];
+    GuidelineChecklistTask *task11 = [[GuidelineChecklistTask alloc] initWithTitle:@"Order Ceftriaxone"];
+    GuidelineChecklistTask *task12 = [[GuidelineChecklistTask alloc] initWithTitle:@"Order Vancomycin"];
+    GuidelineChecklistTask *task13 = [[GuidelineChecklistTask alloc] initWithTitle:@"Order Inotropes"];
+    GuidelineChecklistTask *task14 = [[GuidelineChecklistTask alloc] initWithTitle:@"Treat Hypotension"];
+    // 2nd Interval
+    GuidelineChecklistTask *task15 = [[GuidelineChecklistTask alloc] initWithTitle:@"Reassess Patient"];
+    GuidelineChecklistTask *task16 = [[GuidelineChecklistTask alloc] initWithTitle:@"Treat Adrenal Insufficiency"];
+    GuidelineChecklistTask *task17 = [[GuidelineChecklistTask alloc] initWithTitle:@"Treat Hypotension"];
+    GuidelineChecklistTask *task18 = [[GuidelineChecklistTask alloc] initWithTitle:@"Draw Blood Culture"];
+    GuidelineChecklistTask *task19 = [[GuidelineChecklistTask alloc] initWithTitle:@"Give Antibiotics"];
+    // 3rd Interval
+    GuidelineChecklistTask *task20 = [[GuidelineChecklistTask alloc] initWithTitle:@"Give Fluids"];
+    
+    NSDictionary *tasks1 =[NSDictionary dictionaryWithObjectsAndKeys:
+                           @[
+                             task1,
+                             task2
+                             ], @"0th Interval: Zero Time",
+                           @[
+                             task3,
+                             task4,
+                             task5,
+                             task6,
+                             task7,
+                             task8,
+                             task9,
+                             task10,
+                             task11,
+                             task12,
+                             task13,
+                             task14
+                             ], @"1st Interval: 0-15 Minutes",
+                           @[
+                             task15,
+                             task16,
+                             task17,
+                             task18,
+                             task19
+                             ], @"2nd Interval: 15-60 Minutes",
+                           @[
+                             task20
+                             ], @"3rd Interval: 1-4 Hours",
+                           nil];
+
     
     NSDictionary *guideline1 = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"Sepsis", @"title",
@@ -83,12 +83,18 @@
                                 tasks1, @"checklist",
                                 @"sepsis", @"htmlFile",
                                 nil];
-    NSMutableArray *tasks2 = [[NSMutableArray alloc] init];
 /*
-    GuidelineChecklistTask *task1 = [[GuidelineChecklistTask alloc] init];
-    task1.title = @"DKA Placeholder Task";
-    [tasks2 addObject:task1];
-*/
+ *----------------------------------------------------- DKA --------------------------------------------------------|
+ */
+    // 0th Interval
+    GuidelineChecklistTask *task100 = [[GuidelineChecklistTask alloc] initWithTitle:@"DKA Placeholder"];
+    
+    NSDictionary *tasks2 =[NSDictionary dictionaryWithObjectsAndKeys:
+                           @[
+                             task100
+                             ], @"0th Interval: Zero Time",
+                           nil];
+
     NSDictionary *guideline2 = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"Diabetic Ketoacidosis", @"title",
                                 @"", @"pngFile",
@@ -98,12 +104,18 @@
                                 @"dka", @"htmlFile",
                                 nil];
     
-    NSMutableArray *tasks3 = [[NSMutableArray alloc] init];
 /*
-    GuidelineChecklistTask *task1 = [[GuidelineChecklistTask alloc] init];
-    task1.title = @"TBI Placeholder Task";
-    [tasks3 addObject:task1];
-*/
+ *----------------------------------------------------- TBI --------------------------------------------------------|
+ */
+    // 0th Interval
+    GuidelineChecklistTask *task200 = [[GuidelineChecklistTask alloc] initWithTitle:@"TBI Placeholder"];
+    
+    NSDictionary *tasks3 =[NSDictionary dictionaryWithObjectsAndKeys:
+                           @[
+                             task200
+                             ], @"0th Interval: Zero Time",
+                           nil];
+    
     NSDictionary *guideline3 = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"Traumatic Brain Injury", @"title",
                                 @"", @"pngFile",
@@ -113,12 +125,18 @@
                                 @"tbi", @"htmlFile",
                                 nil];
     
-    NSMutableArray *tasks4 = [[NSMutableArray alloc] init];
 /*
-    GuidelineChecklistTask *task1 = [[GuidelineChecklistTask alloc] init];
-    task1.title = @"Asthma Placeholder Task";
-    [tasks4 addObject:task1];
-*/
+ *----------------------------------------------------- AST --------------------------------------------------------|
+ */
+    // 0th Interval
+    GuidelineChecklistTask *task300 = [[GuidelineChecklistTask alloc] initWithTitle:@"Asthma Placeholder"];
+    
+    NSDictionary *tasks4 =[NSDictionary dictionaryWithObjectsAndKeys:
+                           @[
+                             task300
+                             ], @"0th Interval: Zero Time",
+                           nil];
+    
     NSDictionary *guideline4 = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"Status Asthmaticus", @"title",
                                 @"", @"pngFile",
@@ -128,12 +146,18 @@
                                 @"asthma", @"htmlFile",
                                 nil];
     
-    NSMutableArray *tasks5 = [[NSMutableArray alloc] init];
 /*
-    GuidelineChecklistTask *task1 = [[GuidelineChecklistTask alloc] init];
-    task1.title = @"Epilepsy Placeholder Task";
-    [tasks5 addObject:task1];
-*/
+ *----------------------------------------------------- EPI --------------------------------------------------------|
+ */
+    // 0th Interval
+    GuidelineChecklistTask *task400 = [[GuidelineChecklistTask alloc] initWithTitle:@"Epilepsy Placeholder"];
+    
+    NSDictionary *tasks5 =[NSDictionary dictionaryWithObjectsAndKeys:
+                           @[
+                             task400
+                             ], @"0th Interval: Zero Time",
+                           nil];
+    
     NSDictionary *guideline5 = [NSDictionary dictionaryWithObjectsAndKeys:
                                 @"Status Epilepticus", @"title",
                                 @"", @"pngFile",

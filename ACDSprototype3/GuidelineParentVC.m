@@ -227,7 +227,7 @@
     /**
      *  Right VC. (UITableViewController - Checklist)--------------------------------------------------------|
      */
-    self.checklistVC = [[GuidelineChecklistTVC alloc] init];
+    self.checklistVC = [[GuidelineChecklistTVC alloc] initWithDataDict:self.guidelineDict[@"checklist"]];
     self.checklistVC.view.frame =
     CGRectMake(
                roundf(self.view.frame.size.width - _totalUnusableWidth),
@@ -243,7 +243,6 @@
         [self showViewBoundsProperties:self.checklistVC.view];
     }
     
-    self.checklistVC.tasks = self.guidelineDict[@"checklist"];
     self.checklistVC.view.backgroundColor = UIColorFromHex(0xF2B035);
     self.checklistVC.tableView.layer.borderWidth = 1.0;
     self.checklistVC.tableView.layer.borderColor = [UIColor lightGrayColor].CGColor;

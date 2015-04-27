@@ -9,16 +9,35 @@
 #import "GuidelineChecklistTVC.h"
 #import "GuidelineChecklistTask.h"
 
+#define HDR_FONT_SIZE 15.0f
+#define HDR_FONT_TYPE "HelveticaNeue-Light"
+
 @interface GuidelineChecklistTVC ()
+
+@property NSDictionary *tasks;
+@property NSArray *taskSectionTitles;
+@property NSArray *taskIndexTitles;
 
 @end
 
 @implementation GuidelineChecklistTVC
 
+- (instancetype)initWithDataDict:(NSDictionary *)checklistItems {
+    NSLog(@"%%GuidelineChecklistTVC-I-TRACE, -initWithDataDict called.");
+    
+    self = [super init];
+    if (self) {
+        self.tasks = checklistItems;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     NSLog(@"%%GuidelineChecklistTVC-I-TRACE, -viewDidLoad called.");
     
     [super viewDidLoad];
+    self.taskSectionTitles = [[self.tasks allKeys] sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    self.taskIndexTitles = @[@"0th",@"1st",@"2nd",@"3rd"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -36,14 +55,26 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     NSLog(@"%%GuidelineChecklistTVC-I-TRACE, -numberOfSectionsInTableView: called.");
+    
     // Return the number of sections.
-    return 1;
+    //
+    return [self.taskSectionTitles count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSLog(@"%%GuidelineChecklistTVC-I-TRACE, -tableView:numberOfRowsInSection: called.");
+    
     // Return the number of rows in a section.
-    return self.tasks.count;
+    //
+    NSString *sectionKey = [self.taskSectionTitles objectAtIndex:section];
+    NSArray *sectionTasks = [self.tasks objectForKey:sectionKey];
+    return [sectionTasks count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+    NSLog(@"%%GuidelineChecklistTVC-I-TRACE, -tableView:titleForHeaderInSection: called.");
+    
+    return [self.taskSectionTitles objectAtIndex:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -62,7 +93,9 @@
     
     // Configure the cell.
     //
-    GuidelineChecklistTask *task = [self.tasks objectAtIndex:indexPath.row];
+    NSString *sectionTitle = [self.taskSectionTitles objectAtIndex:indexPath.section];
+    NSArray *sectionTasks = [self.tasks objectForKey:sectionTitle];
+    GuidelineChecklistTask *task = [sectionTasks objectAtIndex:indexPath.row];
     cell.textLabel.text = task.title;
     if (task.completed) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -72,15 +105,34 @@
     return cell;
 }
 
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
+    NSLog(@"%%GuidelineChecklistTVC-I-TRACE, -sectionIndexTitlesForTableView: called.");
+    
+    return self.taskIndexTitles;
+}
+
 #pragma mark - Table view delagate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"%%GuidelineChecklistTVC-I-TRACE, -tableView:didSelectRowAtIndexPath: called.");
     
+    // Deselect the cell immediately after selection.
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    GuidelineChecklistTask *tappedItem = [self.tasks objectAtIndex:indexPath.row];
-    tappedItem.completed = !tappedItem.completed;
+    NSString *sectionTitle = [self.taskSectionTitles objectAtIndex:indexPath.section];
+    NSArray *sectionTasks = [self.tasks objectForKey:sectionTitle];
+    GuidelineChecklistTask *tappedTask = [sectionTasks objectAtIndex:indexPath.row];
+    tappedTask.completed = !tappedTask.completed;
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayHeaderView:(UIView *)view forSection:(NSInteger)section {
+    NSLog(@"%%GuidelineChecklistTVC-I-TRACE, -tableView:willDisplayHeaderView:forSection: called.");
+    
+    UITableViewHeaderFooterView *headerFooterView = (UITableViewHeaderFooterView *)view;
+    headerFooterView.backgroundView.backgroundColor = [UIColor lightGrayColor];
+    headerFooterView.textLabel.font = [UIFont fontWithName:@HDR_FONT_TYPE size:HDR_FONT_SIZE];
+    headerFooterView.textLabel.textColor = [UIColor whiteColor];
+    headerFooterView.textLabel.textAlignment = NSTextAlignmentNatural;
 }
 
 /*
