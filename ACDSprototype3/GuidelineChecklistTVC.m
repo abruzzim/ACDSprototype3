@@ -113,6 +113,9 @@
 
 #pragma mark - Table view delagate
 
+/**
+ * Tell the delegate that the specified row is now selected.
+ */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"%%GuidelineChecklistTVC-I-TRACE, -tableView:didSelectRowAtIndexPath: called.");
     
@@ -121,6 +124,7 @@
     NSString *sectionTitle = [self.taskSectionTitles objectAtIndex:indexPath.section];
     NSArray *sectionTasks = [self.tasks objectForKey:sectionTitle];
     GuidelineChecklistTask *tappedTask = [sectionTasks objectAtIndex:indexPath.row];
+    // Update the model.
     tappedTask.completed = !tappedTask.completed;
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
 }

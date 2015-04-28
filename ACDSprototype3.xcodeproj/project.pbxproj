@@ -40,6 +40,9 @@
 		AFE9BD241AEC30C9002291DE /* GuidelineFlowchartVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9BD231AEC30C9002291DE /* GuidelineFlowchartVC.m */; };
 		AFE9BD271AEC33BB002291DE /* GuidelineOutlineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9BD261AEC33BB002291DE /* GuidelineOutlineVC.m */; };
 		AFE9BD2A1AEC3502002291DE /* GuidelineChecklistTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE9BD291AEC3502002291DE /* GuidelineChecklistTVC.m */; };
+		AFF11BCD1AEFB6970087F207 /* Pharmaceutical.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF11BCC1AEFB6970087F207 /* Pharmaceutical.m */; };
+		AFF11BD01AEFB7AF0087F207 /* Pharmaceuticals.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF11BCF1AEFB7AF0087F207 /* Pharmaceuticals.m */; };
+		AFF11BD31AEFD4E90087F207 /* FormularyTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF11BD21AEFD4E90087F207 /* FormularyTVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +116,12 @@
 		AFE9BD261AEC33BB002291DE /* GuidelineOutlineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelineOutlineVC.m; sourceTree = "<group>"; };
 		AFE9BD281AEC3502002291DE /* GuidelineChecklistTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuidelineChecklistTVC.h; sourceTree = "<group>"; };
 		AFE9BD291AEC3502002291DE /* GuidelineChecklistTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GuidelineChecklistTVC.m; sourceTree = "<group>"; };
+		AFF11BCB1AEFB6970087F207 /* Pharmaceutical.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pharmaceutical.h; sourceTree = "<group>"; };
+		AFF11BCC1AEFB6970087F207 /* Pharmaceutical.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pharmaceutical.m; sourceTree = "<group>"; };
+		AFF11BCE1AEFB7AF0087F207 /* Pharmaceuticals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pharmaceuticals.h; sourceTree = "<group>"; };
+		AFF11BCF1AEFB7AF0087F207 /* Pharmaceuticals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pharmaceuticals.m; sourceTree = "<group>"; };
+		AFF11BD11AEFD4E90087F207 /* FormularyTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormularyTVC.h; sourceTree = "<group>"; };
+		AFF11BD21AEFD4E90087F207 /* FormularyTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormularyTVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,10 +189,10 @@
 				5A1F7B171ADFF9A100DE9885 /* Details.m */,
 				5A1F7AD81ADF198A00DE9885 /* Transport.h */,
 				5A1F7AD91ADF198A00DE9885 /* Transport.m */,
-				AFE9BD0F1AEC1E06002291DE /* Guidelines.h */,
-				AFE9BD101AEC1E06002291DE /* Guidelines.m */,
 				AFE9BD121AEC1EAF002291DE /* GuidelineChecklistTask.h */,
 				AFE9BD131AEC1EAF002291DE /* GuidelineChecklistTask.m */,
+				AFE9BD0F1AEC1E06002291DE /* Guidelines.h */,
+				AFE9BD101AEC1E06002291DE /* Guidelines.m */,
 				AFE9BD151AEC1F80002291DE /* sepsis.html */,
 				AFE9BD171AEC25A8002291DE /* dka.html */,
 				AFE9BD191AEC25C6002291DE /* tbi.html */,
@@ -203,8 +212,14 @@
 				5A1F7AC71ADF0D0000DE9885 /* VitalsParentVC.m */,
 				5A1F7AD21ADF13FE00DE9885 /* VideoParentVC.h */,
 				5A1F7AD31ADF13FE00DE9885 /* VideoParentVC.m */,
+				AFF11BCB1AEFB6970087F207 /* Pharmaceutical.h */,
+				AFF11BCC1AEFB6970087F207 /* Pharmaceutical.m */,
+				AFF11BCE1AEFB7AF0087F207 /* Pharmaceuticals.h */,
+				AFF11BCF1AEFB7AF0087F207 /* Pharmaceuticals.m */,
 				5A1F7ACC1ADF108700DE9885 /* FormularyParentVC.h */,
 				5A1F7ACD1ADF108700DE9885 /* FormularyParentVC.m */,
+				AFF11BD11AEFD4E90087F207 /* FormularyTVC.h */,
+				AFF11BD21AEFD4E90087F207 /* FormularyTVC.m */,
 				5A1F7A951ADEDAF800DE9885 /* Main.storyboard */,
 				5A1F7A981ADEDAF800DE9885 /* Images.xcassets */,
 				5A1F7A9A1ADEDAF800DE9885 /* LaunchScreen.xib */,
@@ -350,6 +365,7 @@
 				5A1F7ABF1ADEE9D900DE9885 /* GuidelinesNC.m in Sources */,
 				5A1F7AC81ADF0D0000DE9885 /* VitalsParentVC.m in Sources */,
 				5A1F7ACB1ADF105B00DE9885 /* FormularyNC.m in Sources */,
+				AFF11BD01AEFB7AF0087F207 /* Pharmaceuticals.m in Sources */,
 				5A1F7AB31ADEDE3700DE9885 /* MainTBC.m in Sources */,
 				AFE9BD2A1AEC3502002291DE /* GuidelineChecklistTVC.m in Sources */,
 				5A1F7ABC1ADEE4D100DE9885 /* TransportsParentVC.m in Sources */,
@@ -357,6 +373,7 @@
 				5A1F7ADD1ADF1A8B00DE9885 /* TransportsMasterTVC.m in Sources */,
 				AFE9BD0E1AEC1CCC002291DE /* GuidelinesTVC.m in Sources */,
 				5A1F7ADA1ADF198A00DE9885 /* Transport.m in Sources */,
+				AFF11BD31AEFD4E90087F207 /* FormularyTVC.m in Sources */,
 				AFE9BD111AEC1E06002291DE /* Guidelines.m in Sources */,
 				AFE9BD271AEC33BB002291DE /* GuidelineOutlineVC.m in Sources */,
 				5A1F7AD71ADF188D00DE9885 /* Transports.m in Sources */,
@@ -368,6 +385,7 @@
 				5A1F7A8E1ADEDAF800DE9885 /* main.m in Sources */,
 				AFE9BD211AEC2FC1002291DE /* GuidelineParentVC.m in Sources */,
 				5A1F7ACE1ADF108700DE9885 /* FormularyParentVC.m in Sources */,
+				AFF11BCD1AEFB6970087F207 /* Pharmaceutical.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

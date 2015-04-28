@@ -10,4 +10,6 @@
 
 @interface FormularyParentVC : UIViewController
 
+@property (strong, nonatomic) NSDictionary *formularyDict;
+
 @end
